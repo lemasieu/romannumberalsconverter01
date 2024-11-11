@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Chuyển đổi số La Mã</title>
+    <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Chuyển đổi số La Mã</h1>
+
+        <label for="arabicNumber">Số tự nhiên (Ả Rập):</label>
+        <input type="number" id="arabicNumber" placeholder="Nhập số Ả Rập" oninput="convertToRoman()">
+
+        <label for="romanNumber">Số La Mã:</label>
+        <input type="text" id="romanNumber" placeholder="Nhập số La Mã" oninput="convertToArabic()">
+
+        <button onclick="clearFields()">Xóa</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
